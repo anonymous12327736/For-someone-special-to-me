@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>For My Love ❤️</title> 
+  <link rel="stylesheet" href="style.css"> 
+  <script src="script.js" defer></script> 
+ <style type="text/css" id="dcoder_stylesheet">body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+header {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 24px;
+}
+
+.hero {
+    padding: 50px;
+    font-size: 20px;
+}
+
+.gallery {
+    padding: 20px;
+}
+
+.images img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.images img:hover {
+    transform: scale(1.1);
+}
+
+.love-letter {
+    padding: 20px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.countdown {
+    padding: 20px;
+    font-size: 22px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+footer {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+}</style></head> 
+ <body> 
+  <header> 
+   <h1>My Love for You ❤️</h1> 
+  </header> 
+  <section class="hero"> 
+   <h2>You're the most beautiful part of my life</h2> 
+   <p>Every moment with you is a blessing. I love you! 💖</p> 
+  </section> 
+  <section class="gallery"> 
+   <h2>Our Beautiful Memories</h2> 
+   <div class="images"> 
+    <img src="https://i.imgur.com/1GcFpR4.png" alt="A beautiful Memory" width="300">
+    <img src="https://i.imgur.com/VTglQll.png" alt="gf" width="300">
+    <img src="https://i.imgur.com/5oUoi9z.png" alt="memory" width="300"> 
+   </div> 
+  </section> 
+  <section class="love-letter"> 
+   <h2>Love Letter 💌</h2> 
+   <p>Dear My Love,</p> 
+   <p>Every day with you is special. You make my world brighter, my heart happier, and my soul complete. I love you endlessly. ❤️</p> 
+   <p>Forever yours,</p> 
+   <p><strong>From your love,polaris</strong></p> 
+  </section> 
+  <section class="countdown"> 
+   <h2>Countdown to Our Special Day</h2> 
+   <p id="timer"></p> 
+  </section> 
+  <footer> 
+   <p>Made with ❤️ for my love</p> 
+  </footer> 
+ 
+<script type="text/javascript" id="dcoder_script">// Countdown Timer
+function countdown() {
+    const targetDate = new Date("2026-02-14T00:00:00").getTime(); // Change this to your special date
+
+    const timer = setInterval(() => {
+        const now = new Date().getTime();
+        const difference = targetDate - now;
+
+        if (difference <= 0) {
+            document.getElementById("timer").innerHTML = "Today is our special day! ❤️";
+            clearInterval(timer);
+            return;
+        }
+
+        const days = Math.floor(difference / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+        document.getElementById("timer").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }, 1000);
+}
+
+countdown();</script></body></html>
