@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+}
+
+header {
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    font-size: 24px;
+}
+
+.hero {
+    padding: 50px;
+    font-size: 20px;
+}
+
+.gallery {
+    padding: 20px;
+}
+
+.images img {
+    width: 30%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.love-letter {
+    padding: 20px;
+    font-size: 18px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    margin: 20px;
+}
+
+.countdown {
+    padding: 20px;
+    font-size: 22px;
+}
+
+footer {
+    padding: 10px;
+    background: rgba(255, 255, 255, 0.2);
+}
